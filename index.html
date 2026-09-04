@@ -1,229 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>clicksite.co — Tu página web lista en 72 horas</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script>
-  // Ajusta "buenas tardes/días/noches" según la hora del visitante
-  // antes de que el navegador abra cualquier link de WhatsApp.
-  function saludoSegunHora(){
-    var hora = new Date().getHours();
-    if (hora < 12) return "buenos días";
-    if (hora < 19) return "buenas tardes";
-    return "buenas noches";
-  }
-  document.addEventListener("DOMContentLoaded", function () {
-    var saludo = encodeURIComponent(saludoSegunHora());
-    document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
-      link.href = link.href.replace("buenas%20tardes", saludo);
-    });
-  });
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>clicksite.co — Tu página web profesional en 72 horas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="blueprint-bg"></div>
+  <div class="blueprint-bg"></div>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <div class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
-          <rect x="8" y="2.5" width="8" height="13" rx="4"/>
-          <line x1="12" y1="2.5" x2="12" y2="9"/>
-        </svg>
-        <svg class="cursor-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-          <path d="M4 3l7 16 2.2-6.8L20 10.2z"/>
-        </svg>
-      </span>
-      <span class="brand-name">click<span class="brand-dot">site</span>.co</span>
-    </div>
-    <a href="#planes" class="btn btn-ghost">Ver planes</a>
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero wrap">
-    <div class="hero-tag">Diseño &amp; construcción de sitios web</div>
-    <h1 class="hero-title">
-      Tu negocio necesita<br>
-      una dirección propia<br>
-      en internet.
-    </h1>
-    <p class="hero-sub">
-      Portafolios, páginas de servicios, blogs y sitios corporativos, construidos
-      y entregados en días, no en meses. Dominio, hosting y ubicación en
-      Google Maps incluidos.
-    </p>
-    <div class="hero-actions">
-      <a href="#planes" class="btn btn-primary">Ver planes y precios</a>
-      <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20crear%20mi%20p%C3%A1gina%20web%2C%20%C2%BFpodr%C3%ADas%20asesorarme%20o%20ayudarme%20a%20crearla%3F" class="btn btn-outline">💬 Escribir por WhatsApp</a>
-    </div>
-
-    <div class="dimension-line">
-      <span class="dim-start"></span>
-      <span class="dim-track"><span class="dim-fill"></span></span>
-      <span class="dim-end"></span>
-      <span class="dim-label">48–72 horas de entrega</span>
-    </div>
-  </section>
-
-  <!-- PROCESO -->
-  <section class="process wrap" id="proceso">
-    <h2 class="section-title">Cómo funciona</h2>
-    <div class="process-grid">
-      <div class="process-step">
-        <span class="step-num">01</span>
-        <h3>Cuéntame tu idea</h3>
-        <p>Me escribes qué necesitas: portafolio, servicios, blog o sitio corporativo. Definimos el plan que te sirve.</p>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="8" y="2.5" width="8" height="13" rx="4" />
+            <line x1="12" y1="2.5" x2="12" y2="9" />
+          </svg>
+          <svg class="cursor-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+            <path d="M4 3l7 16 2.2-6.8L20 10.2z" />
+          </svg>
+        </span>
+        <span class="brand-name">click<span class="brand-dot">site</span>.co</span>
       </div>
-      <div class="process-step">
-        <span class="step-num">02</span>
-        <h3>Yo construyo tu sitio</h3>
-        <p>Diseño y desarrollo tu página, configuro el dominio, el hosting y tu ficha en Google Maps.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-num">03</span>
-        <h3>Recibes tu página lista</h3>
-        <p>Revisamos juntos, hacemos ajustes y tu sitio queda publicado con tu propio nombre de dominio.</p>
-      </div>
+      <a href="#planes" class="btn btn-ghost">Ver planes</a>
     </div>
-  </section>
+  </header>
 
-  <!-- PLANES -->
-  <section class="plans wrap" id="planes">
-    <h2 class="section-title">Planes</h2>
-    <p class="section-sub">Precios en USD. Todos incluyen dominio (1er año), hosting y ficha en Google Maps.</p>
+  <main>
 
-    <div class="plans-grid">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <span class="hero-tag">Diseño &amp; construcción de sitios web</span>
+      <h1 class="hero-title">
+        Tu negocio necesita<br />
+        una <span class="highlight">dirección propia</span><br />
+        en internet.
+      </h1>
+      <p class="hero-sub">
+        Portafolios, páginas de servicios, blogs y sitios corporativos, construidos
+        y entregados en <strong>días</strong>, no en meses. Dominio, hosting y ubicación en
+        Google Maps incluidos.
+      </p>
+      <div class="hero-actions">
+        <a href="#planes" class="btn btn-primary">Ver planes y precios</a>
+        <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20crear%20mi%20p%C3%A1gina%20web%2C%20%C2%BFpodr%C3%ADas%20asesorarme%20o%20ayudarme%20a%20crearla%3F" class="btn btn-outline">💬 Escribir por WhatsApp</a>
+      </div>
 
-      <article class="plan-card">
-        <div class="plan-head">
-          <h3>Básico</h3>
-          <p class="plan-for">Portafolio o landing page</p>
+      <div class="dimension-line">
+        <span class="dim-start"></span>
+        <span class="dim-track"><span class="dim-fill"></span></span>
+        <span class="dim-end"></span>
+        <span class="dim-label">48–72 horas de entrega</span>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="process wrap" id="proceso">
+      <div class="section-header">
+        <h2 class="section-title">Cómo funciona</h2>
+        <p class="section-sub">Tres pasos simples para tener tu sitio web listo y funcionando.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <h3>Cuéntame tu idea</h3>
+          <p>Me escribes qué necesitas: portafolio, servicios, blog o sitio corporativo. Definimos el plan que te sirve.</p>
         </div>
-        <div class="plan-price"><span class="cur">$</span>80<span class="dash">–</span>150</div>
-        <ul class="plan-list">
-          <li>1 página, secciones esenciales</li>
-          <li>Diseño responsive</li>
-          <li>Formulario o link a WhatsApp</li>
-          <li>Dominio + hosting incluidos</li>
-          <li>Entrega en 2–4 días</li>
-        </ul>
-        <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20plan%20B%C3%A1sico%20(portafolio%20o%20landing%20page)." class="btn btn-outline plan-cta">Cotizar este plan</a>
-      </article>
-
-      <article class="plan-card plan-featured">
-        <div class="plan-flag">El más pedido</div>
-        <div class="plan-head">
-          <h3>Servicios</h3>
-          <p class="plan-for">Profesionales y negocios pequeños</p>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <h3>Yo construyo tu sitio</h3>
+          <p>Diseño y desarrollo tu página, configuro el dominio, el hosting y tu ficha en Google Maps.</p>
         </div>
-        <div class="plan-price"><span class="cur">$</span>250<span class="dash">–</span>450</div>
-        <ul class="plan-list">
-          <li>Hasta 5 páginas</li>
-          <li>Diseño semi-personalizado</li>
-          <li>Formulario funcional + galería</li>
-          <li>SEO básico</li>
-          <li>Google Business Profile optimizado</li>
-          <li>Entrega en 1–2 semanas</li>
-        </ul>
-        <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20plan%20Servicios." class="btn btn-primary plan-cta">Cotizar este plan</a>
-      </article>
-
-      <article class="plan-card">
-        <div class="plan-head">
-          <h3>Corporativo</h3>
-          <p class="plan-for">Empresas y sitios con blog</p>
-        </div>
-        <div class="plan-price"><span class="cur">$</span>600<span class="dash">–</span>1,200</div>
-        <ul class="plan-list">
-          <li>Hasta 10 páginas</li>
-          <li>Diseño 100% a la medida</li>
-          <li>Blog con panel de administración</li>
-          <li>SEO on-page completo</li>
-          <li>Capacitación de manejo incluida</li>
-          <li>Entrega en 2–4 semanas</li>
-        </ul>
-        <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20plan%20Corporativo." class="btn btn-outline plan-cta">Cotizar este plan</a>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- INCLUYE -->
-  <section class="includes wrap">
-    <h2 class="section-title">Lo que nunca falta</h2>
-    <div class="includes-grid">
-      <div class="include-item">
-        <span class="include-mark">✓</span>
-        <div>
-          <h4>Dominio propio</h4>
-          <p>tunombre.com, no una dirección genérica.</p>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <h3>Recibes tu página lista</h3>
+          <p>Revisamos juntos, hacemos ajustes y tu sitio queda publicado con tu propio nombre de dominio.</p>
         </div>
       </div>
-      <div class="include-item">
-        <span class="include-mark">✓</span>
-        <div>
-          <h4>Hosting incluido</h4>
-          <p>Tu sitio queda publicado y funcionando, sin pasos extra.</p>
+    </section>
+
+    <!-- PLANES -->
+    <section class="plans wrap" id="planes">
+      <div class="section-header">
+        <h2 class="section-title">Planes</h2>
+        <p class="section-sub">Precios en USD. Todos incluyen <strong>dominio (1er año)</strong>, hosting y ficha en Google Maps.</p>
+      </div>
+
+      <div class="plans-grid">
+
+        <article class="plan-card">
+          <div class="plan-head">
+            <h3>Básico</h3>
+            <p class="plan-for">Portafolio o landing page</p>
+          </div>
+          <div class="plan-price"><span class="cur">$</span>80<span class="dash">–</span>150</div>
+          <ul class="plan-list">
+            <li>1 página, secciones esenciales</li>
+            <li>Diseño responsive</li>
+            <li>Formulario o link a WhatsApp</li>
+            <li>Dominio + hosting incluidos</li>
+            <li>Entrega en 2–4 días</li>
+          </ul>
+          <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20plan%20B%C3%A1sico%20(portafolio%20o%20landing%20page)." class="btn btn-outline plan-cta">Cotizar este plan</a>
+        </article>
+
+        <article class="plan-card plan-featured">
+          <div class="plan-flag">El más pedido</div>
+          <div class="plan-head">
+            <h3>Servicios</h3>
+            <p class="plan-for">Profesionales y negocios pequeños</p>
+          </div>
+          <div class="plan-price"><span class="cur">$</span>250<span class="dash">–</span>450</div>
+          <ul class="plan-list">
+            <li>Hasta 5 páginas</li>
+            <li>Diseño semi-personalizado</li>
+            <li>Formulario funcional + galería</li>
+            <li>SEO básico</li>
+            <li>Google Business Profile optimizado</li>
+            <li>Entrega en 1–2 semanas</li>
+          </ul>
+          <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20plan%20Servicios." class="btn btn-primary plan-cta">Cotizar este plan</a>
+        </article>
+
+        <article class="plan-card">
+          <div class="plan-head">
+            <h3>Corporativo</h3>
+            <p class="plan-for">Empresas y sitios con blog</p>
+          </div>
+          <div class="plan-price"><span class="cur">$</span>600<span class="dash">–</span>1,200</div>
+          <ul class="plan-list">
+            <li>Hasta 10 páginas</li>
+            <li>Diseño 100% a la medida</li>
+            <li>Blog con panel de administración</li>
+            <li>SEO on-page completo</li>
+            <li>Capacitación de manejo incluida</li>
+            <li>Entrega en 2–4 semanas</li>
+          </ul>
+          <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20plan%20Corporativo." class="btn btn-outline plan-cta">Cotizar este plan</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INCLUYE -->
+    <section class="includes wrap">
+      <div class="section-header">
+        <h2 class="section-title">Lo que nunca falta</h2>
+        <p class="section-sub">Cada proyecto incluye estos pilares para que tu presencia en línea sea sólida desde el día uno.</p>
+      </div>
+      <div class="includes-grid">
+        <div class="include-item">
+          <span class="include-mark">✓</span>
+          <div>
+            <h4>Dominio propio</h4>
+            <p>tunombre.com, no una dirección genérica.</p>
+          </div>
+        </div>
+        <div class="include-item">
+          <span class="include-mark">✓</span>
+          <div>
+            <h4>Hosting incluido</h4>
+            <p>Tu sitio queda publicado y funcionando, sin pasos extra.</p>
+          </div>
+        </div>
+        <div class="include-item">
+          <span class="include-mark">✓</span>
+          <div>
+            <h4>Google Maps</h4>
+            <p>Que te encuentren cuando buscan cerca de ellos.</p>
+          </div>
+        </div>
+        <div class="include-item">
+          <span class="include-mark">✓</span>
+          <div>
+            <h4>Diseño responsive</h4>
+            <p>Se ve bien en celular, tablet y computador.</p>
+          </div>
         </div>
       </div>
-      <div class="include-item">
-        <span class="include-mark">✓</span>
-        <div>
-          <h4>Google Maps</h4>
-          <p>Que te encuentren cuando buscan cerca de ellos.</p>
-        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta wrap">
+      <h2>¿Listo para tener tu página?</h2>
+      <p>Escríbeme y en menos de 24 horas te cuento cómo empezar.</p>
+      <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20crear%20mi%20p%C3%A1gina%20web%2C%20%C2%BFpodr%C3%ADas%20asesorarme%20o%20ayudarme%20a%20crearla%3F" class="btn btn-primary btn-large">💬 Escribir por WhatsApp</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="8" y="2.5" width="8" height="13" rx="4" />
+            <line x1="12" y1="2.5" x2="12" y2="9" />
+          </svg>
+          <svg class="cursor-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+            <path d="M4 3l7 16 2.2-6.8L20 10.2z" />
+          </svg>
+        </span>
+        <span class="brand-name">click<span class="brand-dot">site</span>.co</span>
       </div>
-      <div class="include-item">
-        <span class="include-mark">✓</span>
-        <div>
-          <h4>Diseño responsive</h4>
-          <p>Se ve bien en celular, tablet y computador.</p>
-        </div>
+      <div class="footer-links">
+        <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20crear%20mi%20p%C3%A1gina%20web%2C%20%C2%BFpodr%C3%ADas%20asesorarme%20o%20ayudarme%20a%20crearla%3F">WhatsApp</a>
+        <a href="https://www.instagram.com/clicksite.click/">Instagram</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clicksite.click@gmail.com">clicksite.click@gmail.com</a>
       </div>
     </div>
-  </section>
+    <p class="footer-legal">© 2026 clicksite.co — Todos los derechos reservados.</p>
+  </footer>
 
-  <!-- CTA FINAL -->
-  <section class="final-cta wrap">
-    <h2>¿Listo para tener tu página?</h2>
-    <p>Escríbeme y en menos de 24 horas te cuento cómo empezar.</p>
-    <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20crear%20mi%20p%C3%A1gina%20web%2C%20%C2%BFpodr%C3%ADas%20asesorarme%20o%20ayudarme%20a%20crearla%3F" class="btn btn-primary btn-large">💬 Escribir por WhatsApp</a>
-  </section>
+  <script>
+    // Saludo dinámico según la hora
+    function saludoSegunHora() {
+      var hora = new Date().getHours();
+      if (hora < 12) return "buenos días";
+      if (hora < 19) return "buenas tardes";
+      return "buenas noches";
+    }
 
-</main>
-
-<footer class="site-footer wrap">
-  <div class="footer-inner">
-    <div class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
-          <rect x="8" y="2.5" width="8" height="13" rx="4"/>
-          <line x1="12" y1="2.5" x2="12" y2="9"/>
-        </svg>
-        <svg class="cursor-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-          <path d="M4 3l7 16 2.2-6.8L20 10.2z"/>
-        </svg>
-      </span>
-      <span class="brand-name">click<span class="brand-dot">site</span>.co</span>
-    </div>
-    <div class="footer-links">
-      <a href="https://wa.me/3249858782?text=Hola%2C%20buenas%20tardes%2C%20quiero%20crear%20mi%20p%C3%A1gina%20web%2C%20%C2%BFpodr%C3%ADas%20asesorarme%20o%20ayudarme%20a%20crearla%3F">WhatsApp</a>
-      <a href="https://www.instagram.com/clicksite.click/">Instagram</a>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clicksite.click@gmail.com">clicksite.click@gmail.com</a>
-    </div>
-  </div>
-  <p class="footer-legal">© 2026 clicksite.co — Todos los derechos reservados.</p>
-</footer>
+    document.addEventListener("DOMContentLoaded", function() {
+      var saludo = encodeURIComponent(saludoSegunHora());
+      document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+        link.href = link.href.replace(/buenas%20(tardes|días|noches)/, saludo);
+      });
+    });
+  </script>
 
 </body>
 </html>

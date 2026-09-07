@@ -196,7 +196,7 @@ a {
    Header
 ============================================ */
 .site-header {
-  padding: 18px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
@@ -223,12 +223,29 @@ a {
   text-decoration: none;
 }
 
+.site-header .brand {
+  gap: 12px;
+  font-size: 1.55rem;
+}
+
 .brand-mark {
   position: relative;
   display: inline-flex;
   color: var(--paper);
   flex-shrink: 0;
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.site-header .brand-mark svg {
+  width: 28px;
+  height: 28px;
+}
+
+.site-header .brand-mark .cursor-icon {
+  width: 18px;
+  height: 18px;
+  right: -7px;
+  bottom: -6px;
 }
 
 .brand:hover .brand-mark {
